@@ -10,7 +10,7 @@
       <ion-row>
         <ion-col size-lg="12">
           
-            <form>
+            <form [formGroup]="createForm" (ngSubmit)="createEmp()">
               <div class="container">
               <ion-grid>
                 <ion-row class="ion-justify-content-start">
@@ -20,9 +20,6 @@
                       <ion-input formControlName="name" type="text" required></ion-input>
                     </ion-item>
                     <div>
-                      <ng-container *ngIf="createForm.get('name').hasError('required') && createForm.get('name').touched">
-                        Name Shouldn't be Empty
-                      </ng-container>
                     </div>
 
                     <ion-item lines="none">
