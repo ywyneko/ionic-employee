@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4">
+        <h1 class="title">Employees</h1>
+      </ion-col>
+      <ion-col size="8">
+        <ion-button [href]="'/create-employee'">New</ion-button>
+        <ion-button>Filter</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card *ngFor="let employee of employees$|async">
+          <ion-card-content>
+              <span>{{employee.id}}.{{employee.name}}</span> 
+              <b>|</b> <span>{{employee.department_name}}</span>  <b>|</b>
+               <span>{{employee.position}}</span>  <b>|</b> 
+               <span>{{employee.salary | currency:"MMK"}}</span>  
+               
+               <b>|</b>
+                <span>{{employee.nrc}}</span>
+                <b>|</b> <a >Delete</a>  
+                <a >Update</a>
+          </ion-card-content>
+         </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

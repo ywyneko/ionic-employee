@@ -1,0 +1,31 @@
+.title{
+    margin-left : 1%;
+    border-left: 5px solid #0053A9;
+}
+
+ion-button{
+    float: right;
+    border-radius: 5px;
+}
+ion-card{
+    border-radius: 5px;
+    border: 1px solid #303030
+}
+ion-card-content{
+    b{
+        color : #0053a9;
+        padding-left :5.1%;
+    }
+    span{
+        font-size: 18px;
+        padding-left: 3%;
+        color : #303030;
+    }
+    a{
+        color : #303030;
+        text-decoration: underline;
+        font-size: 18px;
+        padding-left: 10%;
+    }
+}
+
