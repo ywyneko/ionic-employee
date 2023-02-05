@@ -1,0 +1,7 @@
+{
+  "name": "ionic-employee-management",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
