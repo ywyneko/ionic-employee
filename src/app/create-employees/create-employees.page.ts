@@ -3,6 +3,7 @@ import { EmployeesService } from './../services/employees.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormControl, FormGroup, Validators } from '@angular/forms';
 import { take } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-employees',
@@ -24,7 +25,8 @@ export class CreateEmployeesPage implements OnInit {
 
   constructor(private formbuilder:FormBuilder,
     private EmployeesService : EmployeesService,
-    private loadingCtrl : LoadingController
+    private loadingCtrl : LoadingController,
+    private route : Router
     ) { }
 
   ngOnInit() {
@@ -43,9 +45,9 @@ export class CreateEmployeesPage implements OnInit {
     loading.present();
     this.EmployeesService.createEmployee(this.createForm.value).pipe(
       take(1)
-    ).subscribe((employee)=>{
-      console.log(employee)
+    ).subscribe(()=>{
       loading.dismiss();
+      this.route.navigateByUrl('');
     })
   }
 
