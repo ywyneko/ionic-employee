@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>edit-employees</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen="full">
+  <h1 class="title">Employee New</h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-lg="12">
+          
+          
 
-<ion-content>
+            <!-- <form >
+              <div class="container">
+              <ion-grid>
+                <ion-row class="ion-justify-content-start">
+                  <ion-col size="6" class="col1">
+                    <ion-item lines="none">
+                      <ion-label position="fixed">Name</ion-label>
+                      <ion-input formControlName="name" type="text" required></ion-input>
+                    </ion-item>
+                    <div>
+                    </div>
 
+                    <ion-item lines="none">
+                      <ion-label position="fixed">DOB</ion-label>
+                       <ion-input formControlName="dob"  type="date"></ion-input>
+                    </ion-item> 
+                
+                    <ion-item lines="none">
+                      <ion-label position="fixed">NRC</ion-label>
+                      <ion-input formControlName="nrc" type="text" required></ion-input>
+                    </ion-item>
+                  </ion-col>
+
+                  <ion-col size="6" class="col2">
+                    <ion-list>
+                      <ion-item lines="none">
+                        <ion-label position="fixed">Department Name</ion-label>
+                        <ion-select formControlName="department_name">
+                          <ion-select-option value="Developer">Developer</ion-select-option>
+                          <ion-select-option value="Designer">Designer</ion-select-option>
+                          <ion-select-option value="Engineer">Engineer</ion-select-option>
+                        </ion-select>
+                      </ion-item>
+                    </ion-list>
+                
+                    <ion-list>
+                      <ion-item lines="none">
+                        <ion-label position="fixed">Positon</ion-label>
+                        <ion-select formControlName="position" >
+                          <ion-select-option value="Senior">Senior</ion-select-option>
+                          <ion-select-option value="Junior">Junior</ion-select-option>
+                        </ion-select>
+                      </ion-item>
+                    </ion-list>
+                
+                    <ion-item lines="none">
+                      <ion-label position="fixed">Salary</ion-label>
+                      <ion-input type="number" formControlName="salary" required></ion-input>
+                    </ion-item>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>  
+            </div>      
+                  <ion-button [disabled] type="submit">Create</ion-button>
+                  <ion-button defaultHref="home">Cancel</ion-button>
+            </form>           -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>

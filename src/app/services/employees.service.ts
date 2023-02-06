@@ -20,4 +20,13 @@ export class EmployeesService {
   createEmployee(employee : Employees){
     return this.http.post(`${this.apiUrl}/employees`,employee);
   }
+
+  getEmployee(employeeId : number){
+   return this.http.get(`${this.apiUrl}/employees/${employeeId}`);
+  }
+
+
+  updateEmployee(employeeId : number,employee : Employees){
+    return this.http.put<Employees>(`${this.apiUrl}/employees/${employeeId}`,employee);
+  }
 }

@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { LoadingController, ModalController } from '@ionic/angular';
 import { Employees } from '../models/employees.model';
+import { EditEmployeesPage } from '../edit-employees/edit-employees.page';
 
 @Component({
   selector: 'app-employees',
@@ -20,7 +21,6 @@ export class EmployeesPage implements OnInit {
  constructor(
   private EmployeesService : EmployeesService,
   private loadingCtrl: LoadingController,
-  private modalCtrl : ModalController
   ){
 
  }
@@ -41,12 +41,22 @@ export class EmployeesPage implements OnInit {
     );
   }
 
-  async openDetailModal(employee : Employees){
-    const modal = await this.modalCtrl.create({
-      component : EmployeeDetailPage,
-      componentProps : {employee}     
-    });
-    modal.present();
-  } 
+
+  // async openEditModal(){
+  //   const modal = await this.modalCtrl.create({
+  //     component : EditEmployeesPage,
+  //     componentProps : {employee : this.employee}
+  //   });
+
+  //   await modal.present();
+  // }
+
+  // async openDetailModal(employee : Employees){
+  //   const modal = await this.modalCtrl.create({
+  //     component : EmployeeDetailPage,
+  //     componentProps : {employee}     
+  //   });
+  //   modal.present();
+  // } 
 
 }

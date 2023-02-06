@@ -1,0 +1,49 @@
+.title{
+    margin-left : 1%;
+    border-left: 5px solid #0053A9;
+}
+.container{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #0053A9;
+
+    ion-input{
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid rgba(133, 130, 130, 0.5);
+    }
+
+   .col1{
+    ion-item{
+        margin-bottom: 5%;
+        margin-left : 30%;
+        width: 50%;
+    }
+   }
+
+    .col2{
+        ion-item{
+            margin-bottom: 3.5%;
+            margin-right : 30%;
+            width: 50%;
+        }
+        ion-select{
+            width:100%;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid rgba(133, 130, 130, 0.5);
+        }
+    }
+}
+
+ion-button{
+    float: right;
+    border-radius: 10px;
+    margin-top : 3%;
+}
+
+    
+
+
